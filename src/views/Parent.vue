@@ -1,5 +1,8 @@
 <template>
-  <div><Child :message="'Hello'" /></div>
+  <div>
+    <!-- <Child :child-message="parentMessage" /> -->
+    <Child />
+  </div>
 </template>
 
 <script>
@@ -11,8 +14,7 @@ export default {
   },
   data: function () {
     return {
-      text: "",
-      message: "",
+      parentMessage: "",
     };
   },
 };

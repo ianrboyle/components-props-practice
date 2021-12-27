@@ -1,11 +1,13 @@
 <template>
   <div>
-    <h1>{{ message }}</h1>
+    <h1>{{ childMessage }}</h1>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["message"],
+  props: {
+    childMessage: { tpye: String, required: true, default: "Default String" },
+  },
 };
 </script>
