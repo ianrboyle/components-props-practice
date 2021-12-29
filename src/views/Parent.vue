@@ -3,6 +3,7 @@
     <Child :child-message="parentMessage" />
     <!-- <Child /> -->
     <Sectors :sectors="sectors" />
+    <Industries />
   </div>
 </template>
 
@@ -10,10 +11,12 @@
 import Child from "@/components/Child.vue";
 import axios from "axios";
 import Sectors from "@/components/Sectors.vue";
+import Industries from "@/components/Industries.vue";
 export default {
   components: {
     Child,
     Sectors,
+    Industries,
   },
   data: function () {
     return {
